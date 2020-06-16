@@ -1,2 +1,2 @@
 # my_site
-01himedia-https://kangminwoo1.github.io/my_site/.01himedia
+01himedia-https://github.com/kangminwoo1/my_site/01himedia
