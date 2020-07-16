@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>slide</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+	</script>
+	<style>
+		header#header{
+			width: 1100px;
+			margin: 0 auto;
+			background:skyblue;
+			padding-top: 10px;
+		}
+		.box{
+			width: 100px;
+			height: 10px;
+			background:red;
+		}
+		.box1{
+			width: 100px;
+			height: 10px;
+			background:blue;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="box"></div>
+		<div class="box1"></div>
+	</header>
+
+
+
+
+
+
+
+
+	<style>
+		.visual{}
+		.visual .view{
+			position: relative;
+			height: 600px;
+			width: 1100px;
+			margin: 0 auto;
+		}s
+		.visual .slider li{
+			overflow: hidden;
+		}
+		.visual .slider img.img{
+			position: absolute;
+			left: 50%;
+			top: 60px;
+		}
+		.visual .visualTxt{
+			position: absolute;
+			top:150px;
+			width: 500px;
+		}
+		.visual .visualTxt h3{
+			font-size: 2.5em;
+			margin-bottom: 20px;
+		}
+		.visual .visualTxt p{
+			margin-bottom: 30px;
+		}
+		.visual .visualTxt a{
+			display: block;
+			width: 200px;
+			height: 60px;
+			background: #f00;
+			color: white;
+			border-radius: 40px;
+			text-align: center;
+			line-height: 60px;
+		}
+	</style>
+
+
+
+	<div class="visual">
+		<ul class="slider">
+			<li>
+				<div class="view">
+					<img src="images/img1.png" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></h3>
+						<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/img1.png" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></h3>
+						<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="view">
+					<img src="images/img1.png" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Financial plans for<br>every <span class="navy">person and<br>everywhere.</span></h3>
+						<p>if you believe you can do it go out there and do it cause<br>that is the only way you are gonna get it!</p>
+						<a href="#" class="btnA">Request Demo</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

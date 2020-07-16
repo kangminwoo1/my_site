@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>chavy</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true,controls:false,pager:false});
+		});
+	</script>	
+	<style>
+	.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+	.logo{width: 1000px;height: 24px;_background-color:blue;margin: 20px auto;position: relative;}
+	.menu{width: 1000px;margin:0 auto;position: absolute;bottom:0;right:350px;}
+	.menu li{float:right;width: 10%;}
+	.menu li>a{display: block;text-align: center;line-height: 30px;}
+	.menu li>a:hover{background-color:blue;color:white;border-radius:40px}
+
+	.menuT{position: absolute;bottom:0;right:0;width: 200px;}
+	.menuT>li{float: right;width: 50%;}
+	.menuT>li>a{display: block;text-align: center;line-height: 30px;}
+	.menuT>li>a:hover{background-color:blue;color:white;border-radius:40px }
+	/*#header{width: 1100px;height: 50px;margin: 0 auto;background-color:skyblue;padding-top: 10px;}*/
+
+	/*.box{width: 100px;height: 10px;background:red;}
+
+	.box1{width: 100px;height: 10px;background:blue;margin*/-top: 10px;}
+
+	.visual{}
+	.visual .view{width: 1100px;position: relative;height:700px;margin: 0 auto;width: 100%;}
+	.visual .slider li{overflow: hidden;}
+	.visual .slider img.img{position: absolute;left: 50%;}
+
+	.visual .visualText{position: absolute;top:150px;width: 500px;}
+
+	.visual .visualText h3{font-size:2.5em;}
+	.visual .visualText p{margin-bottom: 20px;}
+	.visual .visualText a{display: block;width: 200px;height: 80px;background: #f00;
+		color:white; border-radius:40px;text-align: center;line-height: 70px;}
+	
+	</style>
+	</head>
+<body>
+	<header id="header">
+            <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+			<div class="menu">
+				<ul class="clearfix">
+					<li><a href="#">career</a></li>
+					<li><a href="#">company</a></li>
+					<li><a href="#">how it works</a></li>
+					<li><a href="#">home</a></li>
+				</ul>
+			</div>
+			<div class="menuT">
+				<li><a href="#">register</a></li>
+				<li><a href="#">sign in</a></li>
+			</div>
+	</header>
+	
+
+			<div class="visual">
+					<ul class="slider">
+						<li> <!-- 100% -->
+							<div class="view">
+								<img src="images/slider1.png" alt="" class="img">
+
+								<div class="visualText">
+									<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, voluptatem.</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, dicta.</p>
+									<a href="#" class="aBtn">requst demo</a>
+								</div>
+							</div>
+						</li>
+						<li> <!-- 100% -->
+					<div class="view">
+					<img src="images/slider1.png" alt="" class="img">
+					<div class="visualText">
+						<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, numquam!</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, reiciendis.</p>
+						<a href="#" class="aBtn">requst demo</a>
+					</div>
+					</div>
+					</li>
+
+					</ul>
+			</div>
+</html>

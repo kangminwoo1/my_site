@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+
+
+/*header*/
+.headerWrap{}
+.header{
+   background-color: #086ca7;
+   background-image: url(../images/plane.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   
+}
+.topWrap{
+   width: 1200px;
+   height: 80px;
+   margin: 0 auto;
+}
+.top{
+   position: relative;
+}
+.logo img{
+   width: 167px;
+   position: absolute;
+   top: 5px;
+}
+.searchWrap{
+   position: absolute;
+   top: 28px;
+   left: 450px;
+}
+.search{
+   width: 300px;
+   height: 30px;
+   background:white;border-radius: 50px;
+   position: relative;
+}
+.search li{
+   line-height: 27px;
+   padding-left: 10px;
+   font-size: 14px;
+   font-weight: bold;
+}
+.search .inp-field{
+   width: 150px;
+   height: 30px;
+   border: 0 none;
+   color:#999;
+   font-size: 14px;
+   text-indent:12px;
+   position: absolute;
+   top: 0;right: 70px;
+}
+.search img{
+   position: absolute;
+   right: 30px;
+   top:3px;
+   right: 10px;
+   width: 30px;
+}
+.blind{
+   display: block;
+   position: absolute;
+   left: 0;
+   top: -9999px;
+}
+.number{
+   position: absolute;
+   top: 22px;
+   right: 160px;
+}
+.number a{
+   color:white;
+   font-size: 25px
+}
+.sns{
+   position: absolute;
+   right: 0;
+   top: 25px;
+}
+.sns img{
+   width: 30px;
+   height: 30px;
+}
+.menuWrap{}
+.menugnb{
+   width: 100%;
+   border-bottom: 8px solid #086ca7;
+}
+.menu{
+   width: 1200px;
+   margin: 0 auto;
+}
+.menu>ul{}
+.menu>ul>li{
+   float: left;
+   width: 200px;
+   text-align: center;
+   border-right: 1px solid #eee;
+   line-height: 50px;
+   font-weight: bold;
+   cursor:pointer;
+}
+.menu>ul>li:first-child{
+   border-left: 1px solid #eee;
+}
+
+.menu>ul>li:hover{color:#086ca7;}
+
+.content img{width: 100%;}

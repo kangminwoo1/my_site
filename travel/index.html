@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>travel</title>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/jquery.bxslider.css">
+   <link rel="stylesheet" href="css/style02.css">
+   <script src="js/jquery-3.1.1.min.js"></script>
+   <script src="js/jquery.bxslider.js"></script>
+   <script>
+      $(document).ready(function(){
+         $(".boxFour").bxSlider({pager:false});
+         $(".boxThree").bxSlider({pager:false});
+      });
+   </script>
+</head>
+<body>
+   <header class="headerWrap">
+      <div class="header">
+         <div class="topWrap">
+            <div class="top clearfix">
+               <div class="logo">
+                  <a href="#"><img src="images/logo.png" alt=""></a>
+               </div>
+               <div class="searchWrap">
+                  <<!-- div class="search">
+                     <li>SEARCH</li>
+                     <label for="searching" class="blind">검색어를 입력하세요.</label>
+                     <input type="text" id="searching" name="searching" class="inp-field" placeholder="검색어를 입력하세요.">
+                     <img src="images/searching.png" alt="">
+                  </div> -->
+                  <div class="wrap">
+                     
+                     <form action="#" method="get">
+                        <label for="searchTxt" class="searchTitle">searchtitle</label>
+                        <input type="text" id="searchTxt" name="search" placeholder="검색어를 입력하세요." class="searchInp">
+                        <button type="submit" class="searchBtn">search</button>
+                     </form>
+                  </div>
+               </div>
+               <div class="number"><a href="#"><strong>+82</strong> 02 1234 5678</a></div>
+               <div class="sns">
+                  <a href="#"><img src="images/facebook.png" alt=""></a>
+                  <a href="#"><img src="images/twitter.png" alt=""></a>
+                  <a href="#"><img src="images/blog.png" alt=""></a>
+                  <a href="#"><img src="images/instagram.png" alt=""></a>
+               </div>
+            </div> <!-- top -->
+         </div> <!-- topWrap -->
+      </div> <!-- header -->
+   </header>
+   <div class="menuWrap">
+      <div class="menugnb">
+         <div class="menu">
+            <ul class="clearfix">
+               <li><a href="#">여행도시</a></li>
+               <li><a href="#">호텔예약</a></li>
+               <li><a href="#">렌트카</a></li>
+               <li><a href="#">여행TIP</a></li>
+               <li><a href="#">회사소개</a></li>
+               <li><a href="#">커뮤니티</a></li>
+            </ul>
+         </div> <!-- menu -->
+      </div> <!-- menugnb -->
+   </div> <!-- menuWrap -->
+   <div class="content">
+      <div class="containerOne">
+         <section class="section">
+            <ul class="clearfix">
+               <li>
+               <div class="radio">
+                 <aside>
+                    <input type="radio" name="tab" id="one" class="One" checked="checked">
+                    <input type="radio" name="tab" id="two" class="Two">
+                    <input type="radio" name="tab" id="three" class="Three">
+                    <input type="radio" name="tab" id="four" class="Four">
+                   <div class="Label">
+                       <label for="one"><img src="" alt="">공항예약</label>
+                      <label for="two"><img src="" alt="">호텔예약</label>
+                      <label for="three"><img src="" alt="">렌트카</label>
+                      <label for="four"><img src="" alt="">휴양지</label>
+                   </div>
+                 </aside>    
+               </div>
+                  <div class="inPut">
+               <label for="golo" class="Lgolo">가고싶은 나라를 선택하세요</label>
+               <select name="nara" id="golo">
+               <option value="">선택하세요</option>
+               <option value="미국">미국</option>
+               <option value="일본">일본</option>
+               <option value="중국">중국</option>
+               </select>
+               <div class="left">
+                  <label for="sdate">출발일</label>
+                  <input type="date" id="sdate">
+               </div>
+               <div class="right">
+                  <label for="edate">도착일</label>
+                  <input type="date" id="edate">
+               </div>
+               <div class="sit">
+                  <label for="cgrade">좌석등급</label>
+                  <select name="cgrade" id="cgrade">
+                  <option value="비지니스">비지니스</option>
+                  <option value="이코노미">이코노미</option>
+                  </select>
+                  <div class="Snum">
+                     <label for="snum" class="snum1">성인</label>
+                     <input type="number" id="snum">
+                     <label for="cnum" class="cnum1">아이</label>
+                     <input type="number" id="cnum">
+                  </div>
+               </div>
+               <button type="submit" class="tBtn">검색하기</button>
+            </div>  
+               </li>
+            </ul>
+         </section>      
+              <div class="content2">
+                  <li>
+                    <ul>
+                       <li>TRAVEL GO</li>
+                       <li>지금,여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</li>
+                    </ul>
+                 </li>
+              </div>
+                <img src="images/balloon.png" alt="" class="img01">
+            </ul>
+         </section>
+      </div>
+      <div class="containerTwo">
+         <ul class="clearfix">
+            <li>
+               <img src="images/travel01.jpg" alt="">
+               <div class="boxOne">
+                  <a href="#" class="clearfix">
+                     <p>프랑스</p>
+                     <p>\1,900,000~</p>
+                     <p>></p>
+                  </a>
+               </div>
+            </li>
+            <li>
+               <img src="images/travel02.jpg" alt="">
+               <div class="boxTwo">
+                  <a href="#" class="clearfix">
+                     <p>일본</p>
+                     <p>\890,000~</p>
+                     <p>></p>
+                  </a>
+               </div>
+            </li>
+         </ul>
+      </div>
+      <div class="containerThree">
+         <ul class="clearfix">
+            <li>
+               <ul class="boxThree">
+                  <li class="boxThreeSlider">
+                     <img src="images/travel03.jpg" alt="">
+                     <div class="boxThreeTxt">
+                        <a href="#"><p>HILLTON HOTEL (PARIS) <span class="star1">★★★</span>★★</p></a>
+                     </div>
+                  </li>
+                  <li class="boxThreeSlider">
+                     <img src="images/travel03.jpg" alt="">
+                     <div class="boxThreeTxt">
+                        <a href="#"><p>HILLTON HOTEL (PARIS) <span class="star1">★★★</span>★★</p></a>
+                     </div>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <ul class="boxFour">
+                  <li class="boxFourSlider">
+                     <img src="images/travel04.jpg" alt="">
+                     <div class="boxFourTxt">
+                        <a href="#"><p>관광명소(디즈니랜드) <span class="star1">★★★</span>★★</p></a>
+                     </div>
+                  </li>
+                  <li class="boxFourSlider">
+                     <img src="images/travel04.jpg" alt="">
+                     <div class="boxFourTxt">
+                        <a href="#"><p>관광명소(디즈니랜드) <span class="star1">★★★</span>★★</p></a>
+                     </div>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <ul class="boxFive">
+                  <li>
+                     <img src="images/travel05.jpg" alt="">
+                     <div class="boxFiveTxtTop">
+                        <p>TOKYO</p>
+                     </div>
+                     <div class="boxFiveTxtBottom">
+                        <a href="#">
+                           <p>20ºC 구름조금</p>
+                           <p>습도 60% 바람 남남동 2m/s</p>
+                        </a>
+                     </div>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <ul class="boxSix">
+                  <li>
+                     <img src="images/travel06.jpg" alt="">
+                     <div class="boxSixTxtTop">
+                        <p>"해외여행은 처음이었는데,<br>하이미디어여행 덕분에 무사히<br>다녀올 수 있었어요."</p>
+                     </div>
+                     <div class="boxSixTxtMid">
+                        <p>프랑스 파리 자유여행 <span class="star1">★★★</span><span class="star2">★★</span></p>
+                     </div>
+                     <div class="boxSixTxtBottom">
+                        <a href="#">
+                           <p>facebook 여행후기</p>
+                           <p>(임정희님)</p>
+                        </a>
+                     </div>
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <ul class="boxSeven">
+                  <li>
+
+                     <img src="images/travel07.jpg" alt="">
+                     <div class="bg"></div>
+                     <div class="boxSevenTxt bottom">
+                        <img src="images/travelinform.png" alt="">
+                        <p>여행정보</p>
+                        <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                     <div class="boxSevenBar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                     </div>
+                     
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <ul class="boxEight">
+                  <li>
+                     <img src="images/travel08.jpg" alt="">
+                     <div class="bg8"></div>
+                     <div class="boxEightTxt bottom8">
+                        <img src="" alt="">
+                        <p>맛집정보</p>
+                        <p>다양한 나라의 명소와 맛집등<br>상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                     <div class="boxEightBar">
+                        <div class="bar8"></div>
+                        <div class="bar8_1"></div>
+                     </div>
+                  </li>
+               </ul>
+            </li>
+            <li>
+                <ul class="boxNine">
+                  <li>
+
+                     <img src="images/travel07.jpg" alt="">
+                     <div class="bg9"></div>
+                     <div class="boxNinTxt bottom9">
+                        <img src="" alt="">
+                        <p>여행정보</p>
+                        <p>다양한 나라의 명소와 맛집 등<br>상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                     <div class="boxNineBar">
+                        <div class="bar9"></div>
+                        <div class="bar9_1"></div>
+                     </div>
+                     
+                  </li>
+               </ul>
+            </li>
+            <li>
+               <ul class="boxEight">
+                  <li>
+                     <img src="images/travel08.jpg" alt="">
+                     <div class="bg8"></div>
+                     <div class="boxEightTxt bottom8">
+                        <img src="" alt="">
+                        <p>맛집정보</p>
+                        <p>다양한 나라의 명소와 맛집등<br>상세한 정보를 볼 수 있습니다.</p>
+                     </div>
+                     <div class="boxEightBar">
+                        <div class="bar8"></div>
+                        <div class="bar8_1"></div>
+                     </div>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+   <footer class="footerWrap">
+      <div class="footer">
+         <ul class="clearfix">
+            <li>
+               <p>이용약관</p>
+               <p>개인정보취급방침</p>
+               <p>사이트맵</p>
+               <p>고객센터</p>
+               <p>광고 및 제휴문의</p>
+            </li>
+            <li>
+               <p>123-456 서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호 : 123-45-678910 대표이사 : 홍길동 대표번호 : 02-1234-5678</p>
+            </li>
+            <li>
+               <p>COPYRIGHTSⓒ2014 HIMEDIA TOUR ALL RIGHTS RESERVED.</p>
+            </li>
+         </ul>
+      </div>
+   </footer>
+      </div>
+   </div>
+</body>
+</html>

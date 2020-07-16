@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>chavy</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({auto:true,controls:false});
+		});
+	</script>	
+	<style>
+	.logo{width: 1000px;height: 24px;_background-color:blue;margin: 20px auto;position: relative;}
+	.menu{width: 1000px;margin:0 auto;position: absolute;bottom:0;right:350px;}
+	.menu li{float:right;width: 10%;}
+	.menu li>a{display: block;text-align: center;line-height: 30px;}
+	.menu li>a:hover{background-color:blue;color:white;border-radius:40px}
+
+	.menuT{position: absolute;bottom:0;right:0;width: 200px;}
+	.menuT>li{float: right;width: 50%;}
+	.menuT>li>a{display: block;text-align: center;line-height: 30px;}
+	.menuT>li>a:hover{background-color:blue;color:white;border-radius:40px }
+
+	.visual{width: 1100px; margin:0 auto;}
+	.bx-wrapper {
+    -moz-box-shadow:0 none;
+    -webkit-box-shadow: 0 none;
+    box-shadow:0 none;
+    border: 0 none;
+    
+	}
+
+	/*#header{width: 1100px;height: 50px;margin: 0 auto;background-color:skyblue;padding-top: 10px;}*/
+
+	/*.box{width: 100px;height: 10px;background:red;}*/
+
+	/*.box1{width: 100px;height: 10px;background:blue;margin-top: 10px;}*/
+	.bx-wrapper .bx-pager{
+           bottom: 10px;
+       }
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="box"></div>
+		<div class="box1"></div>
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li>
+				<div class="view">
+					
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="logo"><a href="#"><img src="images/logo.png" alt=""></a>
+			<div class="menu">
+				<ul class="clearfix">
+					<li><a href="#">career</a></li>
+					<li><a href="#">company</a></li>
+					<li><a href="#">how it works</a></li>
+					<li><a href="#">home</a></li>
+				</ul>
+			</div>
+			<div class="menuT">
+				<li><a href="#">register</a></li>
+				<li><a href="#">sign in</a></li>
+			</div>
+	</div>	
+	<div class="visual">
+		<ul class="slider">
+			<li><img src="images/pc01.jpg" alt="이미지1"></li>
+			<li><img src="images/pc02.jpg" alt="이미지2"></li>
+		</ul>
+	</div>
+</body>	
+</html>
