@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+#header{width: 1200px;height: 100px;margin: 0 auto;_background:skyblue;}
+#header .logo{width: 300px;height: 100px;_background:blue;float: left;position: relative;}
+.logo li{font-size:44px;font-weight:bold;line-height:100px;color:orange;}
+#header .menu{float:left;width:600px;height: 100px;_background:red;}
+.menu>ul>li{float:left;padding:0 50px;line-height:100px;
+  font-size:20px;font-weight:bold;}
+.menu li:hover{border-bottom: 1px solid orange;background:white;}  
+.menu li:hover .smenu{display: block;}  
+#header .search{float:left;padding-left:20px;line-height:100px;}
+
+#header .search input{width: 200px;height: 30px;border-radius:20px;
+  text-align: center;}
+#header .search button.searchBtn{height: 25px;border-radius:20px}
+
+
+.smenu{position: absolute;left: 0;display: none;
+background:white;width: 100%;z-index:1;}
+.smenu li{display: block;font-size:15px;}
+.smenu>li:hover{border-bottom: 0 none;}
+.smenu li a{display: block;color:gray;display: block;text-align:center;width: 100%;}
+.smenu li a:hover{color:black;}
+
+
+.slider{}
+
+
+.bx-wrapper {
+    -moz-box-shadow: 0 none;
+    -webkit-box-shadow: 0 none;
+    box-shadow: none;
+    border: 0 none;
+}
+
+
+
+
+
+.content{width: 1200px;height:1200px;margin: 0 auto;background-color:pink;
+ }
+.content li{float: left;}
+.content li:nth-child(1){width: 300px;height: 300px;background:white;overflow: hidden;}
+.content li:nth-child(2){width: 300px;height: 300px;background: #fff;overflow: hidden;}
+.content li:nth-child(3){width: 300px;height: 300px;background: #fff;overflow: hidden;}
+.content li:nth-child(4){width: 300px;height: 300px;background: #fff;overflow: hidden;}
+.content li:nth-child(5){width: 300px;height: 300px;background: #fff;overflow: hidden;}
+.content li:nth-child(6){width: 300px;height: 300px;background: #fff;overflow: hidden;}
+.content li:nth-child(7){width: 600px;height: 300px;background-color:red;overflow: hidden;}
+.content li:nth-child(8){width: 300px;height: 600px;background:blue;overflow: hidden;}
+.content li:nth-child(9){width: 600px;height: 300px;background:skyblue;overflow: hidden;}
+.content li:nth-child(9) img{width: 600px;}
+.content li:nth-child(10){width: 300px;height: 300px;background:orange;overflow: hidden;}
+.content li:nth-child(11){width: 300px;height: 300px;background:black;overflow: hidden;}
+.content li:nth-child(12){width: 600px;height: 300px;background:gray;overflow: hidden;}
+/*../실수로 인해서 따로 했음 한번에 하면 편했을걸......*/
+
+.content img{width: 300px;height: 300px;}
+
+
+

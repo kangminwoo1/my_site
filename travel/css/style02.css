@@ -208,12 +208,17 @@ right:25px;bottom:43px;border-radius:10px;border: 1px solid #aaa;}
 .inPut .tBtn:hover{transform:translate(3px 3px);box-shadow:0 0 #000;}   
 .inPut   
 
+.section{width: 380px;height: 300px;}
 
-.content .containerOne .section{position: relative;}
+.content .containerOne .section .content2{width: 380px;height: 300px;
+   background-color:blue;float:right;}
 
-.content .containerOne .section>ul{}
+
+
+.content .containerOne .section>ul{width: 482px;}
 .content .containerOne .section>ul>li{
    float: left;
+   width: 482px;
    height: 300px;
    margin-bottom: 20px;
    margin-top: 50px;
@@ -221,7 +226,7 @@ right:25px;bottom:43px;border-radius:10px;border: 1px solid #aaa;}
    position: relative;
    z-index:1;
 }
-.content .containerOne .section li:nth-child(1){background-color:orange;width: 482px;_position:relative;}
+
 
 .radio{width: 130px;float: left;}
 .radio input{display: none;}
@@ -235,11 +240,6 @@ right:25px;bottom:43px;border-radius:10px;border: 1px solid #aaa;}
 .radio input.Two:checked ~ .Label label:nth-child(2){background-color: #fff;color:#484848;}
 .radio input.Three:checked ~ .Label label:nth-child(3){background-color: #fff;color:#484848;}
 .radio input.Four:checked ~ .Label label:nth-child(4){background-color: #fff;color:#484848;}
-
-
-
-
-
 
 
 
