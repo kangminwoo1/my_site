@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>fullpage</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+   	<link rel="stylesheet" href="css/style.css">
+   	<link rel="stylesheet" href="../../w2020/css/animate.css">
+   	<script src="js/jquery-3.1.1.min.js"></script>
+   		<script src="js/jquery.fullpage.js"></script>
+   	<script src="js/jquery.bxslider.js"></script>
+   <script>
+      $(function(){
+         $("#fullpage").fullpage({
+            anchors:["a1st","a2st","a3st","a4st"],
+            menu:"#topMenu",
+            navigation: true,
+            afterLoad:function(anchorsLink,index){
+               
+               if(index == 1){
+                  $("#onviewOne").addClass("move");
+               }else{
+                  $("#onviewOne").removeClass("move");
+               }
+               if(index == 2){
+                  $("#onviewTwo").addClass("move");
+               }else{
+                  $("#onviewTwo").removeClass("move");
+               }
+            }
+         });
+ 
+         $(".slider").bxSlider();
+
+
+      $(".setBtn").click(function(){
+      		if($(".simg").attr("class") == "simg" ){
+      		  $(".simg").stop().animate({left:0},600);
+              $(".rimg").stop().animate({right:0},600);	
+              $(".simg").addClass("view");
+      		}else{
+      		  $(".simg").removeClass("view");
+      		  $(".simg").stop().animate({left:"-100%"},600);
+              $(".rimg").stop().animate({right:"-100%"},600);	
+      		}
+             
+         }); 
+      		
+      $(".more").click(function(){
+      		if($(".mobile").attr("class") == "mobile"){
+             $(".mobile").stop().animate({top:0},500);
+             $(".pc").stop().animate({bottom:0},500);
+             $(".mobile").addClass("view");
+         	}else{
+         		$(".mobile").removeClass("view");
+         		$(".mobile").stop().animate({top:"-100%"},500)
+         		$(".pc").stop().animate({bottom:"-100%"},500)
+         	}
+         }); 
+          
+
+        }); 
+         $(document).ready(function(){
+         $(".toggleMenu").click(function(){
+            console.log($(".toggleMenu").attr("class"));
+
+            if($(".toggleMenu").attr("class")=="toggleMenu"){
+               $(".toggleMenu").addClass("change");
+            }else{
+               $(".toggleMenu").removeClass("change");
+            }
+
+            var menu = $(".navbar").attr("class");
+            if(menu == "navbar"){  //메뉴와메뉴가 같다면..
+               $(".navbar").addClass("top"); //class menu에 top추가
+            }else{
+               $(".navbar").removeClass("top");
+            }
+         });
+      }); 
+
+
+         
+      </script>
+</head>
+<body>
+	<div class="toggleMenu">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<div class="menuGuide">		
+	<ul class="navbar clearfix" >
+				<li><a href="#">소식</a>
+					<ul class="smenu clearfix">
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">패치안내</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">GM매거진</a></li>
+						<li><a href="#">미디어</a></li>
+					</ul>
+				</li>
+				<li><a href="#">가이드</a>
+					<ul class="smenu clearfix">
+						<li><a href="#">게임소개</a></li>
+						<li><a href="#">게임배우기</a></li>
+						<li><a href="#">아이템</a></li>
+						<li><a href="#">프리미엄서비스</a></li>
+						<li><a href="#">쿠폰사용법</a></li>
+					</ul>
+				</li>
+				<li><a href="#">클럽</a>
+					<ul class="smenu clearfix">
+						<li><a href="#">클럽이야기</a></li>
+						<li><a href="#">클럽랭킹</a></li>
+					</ul>
+				</li>
+				<li><a href="#">HOME</a>
+				</li>
+				<li><a href="#">리그</a></li>
+				<li><a href="#">커뮤니티</a>
+					<ul class="smenu clearfix">
+						<li><a href="#">자유게시판</a></li>
+						<li><a href="#">공략게시판</a></li>
+						<li><a href="#">이미지게시판</a></li>
+						<li><a href="#">아이디어게시판</a></li>
+						<li><a href="#">설문조사</a></li>
+					</ul>
+				</li>
+				<li><a href="#">자료실</a>
+					<ul class="smenu clearfix">
+						<li><a href="#">다운로드</a></li>
+						<li><a href="#">카트영상</a></li>
+						<li><a href="#">openAPI</a></li>
+					</ul>
+				</li>
+				<li><a href="#">고객지원</a>
+					<ul class="smenu clearfix">
+						<li><a href="#">1:1문의</a></li>
+						<li><a href="#">건의하기</a></li>
+						<li><a href="#">보안센터</a></li>
+					</ul>
+				</li>
+			</ul>
+	</div>			
+	<div class="topMenu">
+		<a href="#a1st"><img src="images/top.png" alt=""></a>
+	</div>
+	<div id="fullpage">
+		<a href="#"><img src="images/logo01.png" alt="" class="logo"></a>
+		<div class="section" id="page1" data-anchor="a1st">
+				<div class="sWrap">
+					<h3 class="animated heartBeat">카트라이더에 오신것을 환영합니다.</h3>
+
+						<ul class="slider">
+							<li class="vod">
+								<video id="video" src="videoo.mp4"  muted data-autoplay loop>
+								</video>
+							</li>	
+							<li>
+								<a href="#"><img src="images/slider.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/slider1.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/slider2.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/slider3.jpg" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/slider4.jpg" alt=""></a>
+							</li>	
+						</ul>
+					<div class="banner">
+						<ul class="clearfix">
+							<li>
+								<a href="#"><img src="images/is02.png" alt=""></a>
+							</li>
+							<li>
+								<a href="#"><img src="images/is01.png" alt=""></a>
+							</li>
+						</ul>	
+					</div>
+				</div>
+			<div class="scroll">
+      		<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+      		</div>
+		</div>
+		<div class="section" id="page2" data-anchor="a2st">
+			<div class="scroll">
+      			<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+      		</div>
+      		<div class="black">black</div>
+      		<div class="guide">
+      			<h1>조작&모드 설명</h1>
+      			<div class="bar1"></div>
+      			<div class="bar2"></div>
+      			<div class="click">Click</div>
+  				<button type="button" class="setBtn"><img src="images/guide.png" alt="">
+  				</button> 
+      			<div class="simg">
+	  				<img src="images/key.jpg" alt="" class="keyB">
+	  				<div class="simg2 clearfix">
+      					<img src="images/bhk.png" alt="">
+      					<h3>상/하/좌/우 키를 사용하여 카트를 조작합니다.</h3>
+      					<p>화살표 위방향 키를 사용해 차량을 가속 시키고 좌우버튼으로 방향을결정합니다. 화살표 아래방향키는 차량이 달리고 있을 떄는 브레이크 기능을 하며, 장애물에 걸렸을 경우나 방향이 잘못 되었을때는 후진을할 수도 있습니다.</p>
+      				</div>
+
+      				<div class="simg3 clearfix">
+      					<img src="images/zjk.png" alt="">	
+      					<h3>드리프트와 아이템을 조작합니다.</h3>
+      					<p>Shift키로 누르는 시간과 타이밍에 따라 실제와 같은 드리프트를 구현할 수 있고, Ctrl키로는 보유중인 아이템을 사용합니다.또한,Z키로 아이템을 변경해 사용 하거나 Alt키로 아이템의 순서를 교체하여 상황에 맞게 사용할 수 있습니다.</p>
+      				</div>
+
+      				<div class="simg4 clearfix">
+      					<img src="images/f5.png" alt="">
+      					<h3>READY / START 합니다.</h3>
+      					<p>입장한 방에서 게임을 준비하거나 시작합니다.</p>
+      				</div>
+
+      				<div class="simg5 clearfix">
+      					<img src="images/~.png" alt="">
+      					<h3>다른 라이더의 라이더명 표시</h3>
+      					<p>게임 중 다른 라이더의 라이더명 표시를 on/off 합니다.</p>
+      				</div>
+      			</div>
+      			<div class="rimg">
+      				<h2>게임모드</h2>
+      				<div class="rimg1 clearfix">
+      					<img src="images/item.jpg" alt="">
+      					<h3>01.아이템전</h3>
+      					<p>다양한 아이템을 이용한 신나는 공격-방어의 재미와 다이나믹한 레이싱의 재미를 동시에 느껴보세요. 한번의 공격으로 순위가 뒤바뀌는 아이템전은 여러분이 결승선을 통과하는 순간까지 한 순간도 방심할 수 없게 할 것입니다.</p>
+      				</div>
+      				<div class="rimg2 clearfix">
+      					<h3>02.스피드전</h3>
+      					<p>카트라이더의 짜릿한 스피드를 원하시면 드리프트 부스터를 채워 빠르기를 경주하는 스피드 모드를 즐겨보세요. Shift를 누르는 시간과 타이밍에 따라 실제와 같은 드리프트의 짜릿함을 누릴 수 있습니다.</p>
+      					<img src="images/speed.jpg" alt="">
+      				</div>
+      				<div class="rimg3 clearfix">
+      					<h3>02.아이템 팀 배틀전</h3>
+      					<p>아이템 팀배틀 모드는 라이더들이 힘을 합쳐 상대 배틀팀(고디우스팀, 리타이 언맨팀, 비스트팀 등)과 맞서 아이템전을 펼치는 새로운 형태의 게임모드입니다. 자신의 실력에 맞춰 상대 배틀팀과 난이도(Easy, Normal, Hard)를 선택하여 레이싱을 즐길 수 있으며 필살기 아이템을 사용할 수 있습니다.</p>
+      					<img src="images/item_teem.jpg" alt="">
+      				</div>
+      			</div>
+      		</div>
+		</div>
+		<div class="section" id="page3" data-anchor="a3st">
+				<div class="main" id="onviewTwo">
+					<h1>NEXON 게임추천</h1>
+					<p><a href="#" class="more">더보기</a></p>
+					<div class="mobile">
+						<h3 class="white">모바일게임 TOP3</h3>
+						<div class="mobile01 clearfix">
+							<a href="#"><img src="images/br.png" alt=""></a>
+							<h3>바람의나라:연</h3>
+							<p>장르:MMorpg</p>
+						</div>
+						<div class="mobile02 clearfix">
+							<a href="#"><img src="images/kyj.png" alt=""></a>
+							<h3>카이저</h3>
+							<p>장르:MMorpg</p>
+						</div>
+						<div class="mobile03 clearfix">
+							<a href="#"><img src="images/v4.png" alt=""></a>
+							<h3>v4</h3>
+							<p>장르:MMorpg</p>
+						</div>			
+					</div>
+				<div class="pc">
+					<h3 class="white">PC게임 TOP3</h3>
+					<div class="pc01 clearfix">
+						<a href="#"><img src="images/maple.png" alt=""></a>
+						<h3>메이플스토리</h3>
+						<p>모험과 재미가 가득한 2D<br> 횡스크롤 MMORPG</p>
+					</div>
+					<div class="pc02 clearfix">
+						<a href="#"><img src="images/sud.png" alt=""></a>
+						<h3>서든어택</h3>
+						<p>event:15주년 대축제</p>
+					</div>
+					<div class="pc03 clearfix">
+						<a href="#"><img src="images/ea.png" alt=""></a>
+						<h3>피파온라인4</h3>
+						<p>축구,그이상을 경험할수있는 방법</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+
+	</footer>
+</body>
+</html>
