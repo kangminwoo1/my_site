@@ -1,4 +1,0 @@
-@charset "utf-8";
-
-@import "pc.css" screen and (min-width:923px);
-@import "mobile.css" screen and (max-width:922px); /*tablet*/

@@ -11,7 +11,7 @@
    	<link rel="stylesheet" href="css/style.css">
    	<link rel="stylesheet" href="css/animate.css">
    	<script src="js/jquery-3.1.1.min.js"></script>
-   		<script src="js/jquery.fullpage.js"></script>
+   		<script src="js/jquery.fullPage.js"></script>
    	<script src="js/jquery.bxslider.js"></script>
    <script>
       $(function(){
@@ -50,7 +50,7 @@
              
          }); 
       		
-      $(".more").click(function(){
+         $(".more").click(function(){
       		if($(".mobile").attr("class") == "mobile"){
              $(".mobile").stop().animate({top:0},500);
              $(".pc").stop().animate({bottom:0},500);
@@ -61,10 +61,8 @@
          		$(".pc").stop().animate({bottom:"-100%"},500)
          	}
          }); 
-          
 
-        }); 
-         $(document).ready(function(){
+
          $(".toggleMenu").click(function(){
             console.log($(".toggleMenu").attr("class"));
 
@@ -307,14 +305,14 @@
       					<p>다양한 아이템을 이용한 신나는 공격-방어의 재미와 다이나믹한 레이싱의 재미를 동시에 느껴보세요. 한번의 공격으로 순위가 뒤바뀌는 아이템전은 여러분이 결승선을 통과하는 순간까지 한 순간도 방심할 수 없게 할 것입니다.</p>
       				</div>
       				<div class="mobile_rimg2 clearfix">
+      					<img src="images/speed.jpg" alt="">
       					<h3>02.스피드전</h3>
       					<p>카트라이더의 짜릿한 스피드를 원하시면 드리프트 부스터를 채워 빠르기를 경주하는 스피드 모드를 즐겨보세요. Shift를 누르는 시간과 타이밍에 따라 실제와 같은 드리프트의 짜릿함을 누릴 수 있습니다.</p>
-      					<img src="images/speed.jpg" alt="">
       				</div>
       				<div class="mobile_rimg3 clearfix">
+      					<img src="images/item_teem.jpg" alt="">
       					<h3>02.아이템 팀 배틀전</h3>
       					<p>아이템 팀배틀 모드는 라이더들이 힘을 합쳐 상대 배틀팀(고디우스팀, 리타이 언맨팀, 비스트팀 등)과 맞서 아이템전을 펼치는 새로운 형태의 게임모드입니다. 자신의 실력에 맞춰 상대 배틀팀과 난이도(Easy, Normal, Hard)를 선택하여 레이싱을 즐길 수 있으며 필살기 아이템을 사용할 수 있습니다.</p>
-      					<img src="images/item_teem.jpg" alt="">
       				</div>
       			</div>
       		</div>
@@ -322,10 +320,37 @@
 		<div class="section" id="page3" data-anchor="a3st">
 				<div class="main" id="onviewTwo">
 					<h1>NEXON 게임추천</h1>
-					<p><a href="#" class="more">더보기</a></p>
-					<div class="mobile">
+					<p class="pl">
+            <a href="#" class="more">더보기</a>           
+          </p>
+				
+          <div class="mobile">
 						<h3 class="white">모바일게임 TOP3</h3>
 						<div class="mobile01 clearfix">
+               <img src="images/br.png" alt="">
+               <div class="txt">
+                  <h3>바람의나라:연</h3>
+                  <p>장르:MMorpg</p>
+               </div>
+            </div>
+            <div class="mobile01 clearfix">
+               <img src="images/kyj.png" alt="">
+               <div class="txt">
+                  <h3>바람의나라:연</h3>
+                  <p>장르:MMorpg</p>
+               </div>
+            </div>
+               <div class="mobile01 clearfix">
+               <img src="images/v4.png" alt="">
+               <div class="txt">
+                  <h3>바람의나라:연</h3>
+                  <p>장르:MMorpg</p>
+               </div>
+            </div>
+
+
+<!-- 
+                  <div class="mobile01 clearfix">
 							<a href="#"><img src="images/br.png" alt=""></a>
 							<h3>바람의나라:연</h3>
 							<p>장르:MMorpg</p>
@@ -339,31 +364,56 @@
 							<a href="#"><img src="images/v4.png" alt=""></a>
 							<h3>v4</h3>
 							<p>장르:MMorpg</p>
-						</div>			
+						</div>			 -->
 					</div>
-				<div class="pc">
-					<h3 class="white">PC게임 TOP3</h3>
-					<div class="pc01 clearfix">
-						<a href="#"><img src="images/maple.png" alt=""></a>
-						<h3>메이플스토리</h3>
-						<p>모험과 재미가 가득한 2D<br> 횡스크롤 MMORPG</p>
-					</div>
-					<div class="pc02 clearfix">
-						<a href="#"><img src="images/sud.png" alt=""></a>
-						<h3>서든어택</h3>
-						<p>event:15주년 대축제</p>
-					</div>
-					<div class="pc03 clearfix">
-						<a href="#"><img src="images/ea.png" alt=""></a>
-						<h3>피파온라인4</h3>
-						<p>축구,그이상을 경험할수있는 방법</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer class="footer">
 
-	</footer>
+   				<div class="pc">
+   					<h3 class="white">PC게임 TOP3</h3>
+
+                  <div class="pc01 clearfix">
+                     <img src="images/maple.png" alt="">
+                     <div class="txt">
+                        <h3>메이플스토리</h3>
+                         <p>모험과 재미가 가득한<br> 2D 횡스크롤 MMORPG</p>
+                     </div>
+                  </div>
+                  <div class="pc01 clearfix">
+                     <img src="images/sud.png" alt="">
+                     <div class="txt">
+                       <h3>서든어택</h3>
+                        <p>event:15주년 대축제</p>
+                     </div>
+                  </div>
+                  <div class="pc01 clearfix">
+                     <img src="images/ea.png" alt="">
+                     <div class="txt">
+                       <h3>피파온라인4</h3>
+                     <p>축구,그이상을 경험할수있는 방법</p>
+                     </div>
+                  </div>
+
+
+
+   					<!-- <div class="pc01 clearfix">
+   						<a href="#"><img src="images/maple.png" alt=""></a>
+   						<h3>메이플스토리</h3>
+   						<p>모험과 재미가 가득한 2D<br> 횡스크롤 MMORPG</p>
+   					</div>
+   					<div class="pc02 clearfix">
+   						<a href="#"><img src="images/sud.png" alt=""></a>
+   						<h3>서든어택</h3>
+   						<p>event:15주년 대축제</p>
+   					</div>
+   					<div class="pc03 clearfix">
+   						<a href="#"><img src="images/ea.png" alt=""></a>
+   						<h3>피파온라인4</h3>
+   						<p>축구,그이상을 경험할수있는 방법</p>
+   					</div> -->
+   				</div>
+			</div> <!-- main end -->
+		</div><!-- section end -->
+
+	</div> <!-- fullpage end -->
+	
 </body>
 </html>
