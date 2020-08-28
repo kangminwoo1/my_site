@@ -4,7 +4,7 @@
 #page1{background-image: url(../images/bg0102.jpg);}
 #page2{background-image: url(../images/gd.jpg);z-index:1;}
 #page3{background-image: url();}
-.section{
+.sectionT{
          background-repeat: no-repeat;
          background-position: center;
          background-size:cover;
@@ -26,7 +26,7 @@ img.logo{width: 20%;position: absolute;left: 40%;top: 6%;z-index:1;}
 .black{width: 100%;height: 100%;background-color:black;opacity:0.7;text-indent:-9999px;position: absolute;}
 .guide{width: 100%;height: 100%;position: relative;}
 .guide li{text-indent:-9999px}
-.guide h1{color:white;position: absolute;left: 38%;top: 25%;font-size:30px;}
+.guide h1{color:white;position: absolute;left: 50%;top: 5%;font-size:30px;transform: translateX(-50%);}
 .guide button>img{width:80%;}
 .guide button{position: absolute;left: 46%;top:35%;
 background-color:navy;z-index:1;}
@@ -97,6 +97,30 @@ width: 700px;height: 100%;right:0;background-color:#7caeeb;}
 .click{display: none;}
 
 
+
+.simg{display: none;}
+.simg2{display: none;}
+.vimg{display: none;}
+.view{display: none;}
+.setBtn{display: none;}
+.rimg{display: none;}
+.rimg1{display: none;}
+.rimg2{display: none;}
+.rimg3{display: none;}
+
+.mobile_simg{width: 45%;margin: 0 auto;background: #fff;position: absolute;z-index: 999;bottom: 0px;left: 0;}
+.mobile_simg2{width: 100%;}
+.mobile_vimg{width: 30%;}
+.mobile_view{
+   width: 100%;
+   font-size: 12px;
+   color:gray;
+}
+.mobile_rimg img{width: 44.1%;}
+.mobile_rimg{width: 45%;margin: 0 auto;background: #fff;position: absolute;z-index: 999;bottom: 0px;right: 0;}
+.mobile_rimg1{width: 100%;font-size: 12px;}
+.mobile_rimg2{width: 100%;font-size: 12px;}
+.mobile_rimg3{width: 100%;font-size: 12px;}
 
 
 
